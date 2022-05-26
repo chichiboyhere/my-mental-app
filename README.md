@@ -1,0 +1,3 @@
+# Description of my-mental-app
+
+The Mental Game is a multiplication game where you get to answer as many randomly generated multiplication problems as you can, within 60 seconds. You are required to specify the multiplication table limit you want to play and then push the 'Enter' button. You'll receive a confirmation that says 'Table limit noted!'. Then push the 'Start Game' button to get the game started. Once the game starts, you will be flashed a multiplication problem within the table limit you specified. You are to type in the answer to the problem in the input field below and press the 'Enter' button. This process will be repeated till 60 seconds elapses.
