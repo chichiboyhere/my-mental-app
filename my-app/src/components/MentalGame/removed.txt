@@ -1,0 +1,48 @@
+ const inputHandler = (event) => {
+      {
+        /**Stop the page from reloading upon submitting the form*/
+      }
+      event.preventDefault();
+  
+      {/**Ensure the input filled out before submission */}
+      if (enteredTime.trim().length === 0 || enteredTable.trim().length === 0) {
+        setError({
+          title: "Invalid Input",
+          message: "Please enter a valid input (non-empty values)",
+        });
+        return;
+      }
+  
+      {
+        /** Ensure that the age entered by user is not less than 1; the plus sign helps in converting the string to a number */
+      }
+      if (enteredTime < 10 || enteredTable < 2) {
+        setError({
+          title: "Input Too Small!",
+          message: "Please enter a higher value",
+        });
+        return;
+      }
+      //{
+        /**Function call to the AddUser function in App.js */
+      //}
+      //props.onAddUser(enteredTime, enteredTable);
+      //console.log(enteredTime, enteredTable + " years old");
+      {
+        /** Clear out the input fields in the form on submitting the form */
+      }
+      //setEnteredTime("");
+      //setEnteredTable("");
+      // Game starter
+     
+    };
+ 
+ {error && (
+        <ErrorModal
+          title={error.title}
+          message={error.message}
+          onConfirm={errorHandler}
+        />
+      )}
+
+      <form onSubmit={inputHandler}><button type="submit">submit</button></form>
